@@ -13,7 +13,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="news.html">News</a></li>
-        <li><a href="weather.html">Weather</a></li>
+        <li><a href="index.html">Weather</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
@@ -27,84 +27,62 @@
               <div class="summary">
                 <h2>Weather summary</h2>
                 <h3 id="five-city"></h3>
-                <p>Currently: <span id="current-desc">Sunny</span></p>
+                <p>Currently: <span id="current-desc"></span></p>
                 <p>
                   Tempature:
-                  <span id="current-temp"></span>92 °F
+                  <span id="current-temp"></span> °F
                 </p>
-                <p>Wind Chill: <span id="current-windChill"></span>88 °F</p>
-                <p>Humidity: <span id="current-humid"></span>40%</p>
-                <p>Wind Speed: <span id="current-windSpeed"></span>35 mph</p>
+                <p>Feels Like: <span id="current-feelsLike"></span> °F</p>
+                <p>Humidity: <span id="current-humid"></span>%</p>
+                <p>Wind Speed: <span id="current-windSpeed"></span> mph</p>
               </div>
             </section>
-            <div>
-              <img src="https://picsum.photos/400" alt="Random Image" />
-            </div>
+            <div id="mainIcon"></div>
           </article>
 
           <!-- 5 day forecast -->
           <div class="article-five-day">
             <article id="forecastContainer">
               <h2 id="forecastTitle">5 Day Forecast</h2>
-              <h3 id="city">Tooele</h3>
+              <h3 id="city"></h3>
               <div class="flex">
                 <div class="flex-col">
-                  <span id="dayTitle1" class="col-head">Monday</span>
-                  <img
-                    src="images/partlyCloudy.jpg"
-                    id="weatherIcon1"
-                    class="weatherIcon"
-                  />
+                  <span id="dayTitle1" class="col-head"></span>
+                  <div id="image1"></div>
                   <span class="temp-data">
-                    <span id="data1">75</span>
+                    <span id="data1"></span>
                     <span>°F</span>
                   </span>
                 </div>
                 <div class="flex-col">
-                  <span id="dayTitle2" class="col-head">Tuesday</span>
-                  <img
-                    src="images/overcast.jpg"
-                    id="weatherIcon2"
-                    class="weatherIcon"
-                  />
+                  <span id="dayTitle2" class="col-head"></span>
+                  <div id="image2"></div>
                   <div class="temp-data">
-                    <span id="data2">68</span>
+                    <span id="data2"></span>
                     <span>°F</span>
                   </div>
                 </div>
                 <div class="flex-col">
-                  <span id="dayTitle3" class="col-head">Wednesday</span>
-                  <img
-                    src="images/Sunny.jpg"
-                    id="weatherIcon3"
-                    class="weatherIcon"
-                  />
+                  <span id="dayTitle3" class="col-head"></span>
+                  <div id="image3"></div>
                   <div class="temp-data">
-                    <span id="data3">81</span>
+                    <span id="data3"></span>
                     <span>°F</span>
                   </div>
                 </div>
                 <div class="flex-col">
-                  <span id="dayTitle4" class="col-head">Thursday</span>
-                  <img
-                    src="images/thunderStorms.jpg"
-                    id="weatherIcon4"
-                    class="weatherIcon"
-                  />
+                  <span id="dayTitle4" class="col-head"></span>
+                  <div id="image4"></div>
                   <div class="temp-data">
-                    <span id="data4">78</span>
+                    <span id="data4"></span>
                     <span>°F</span>
                   </div>
                 </div>
                 <div class="flex-col">
-                  <span id="dayTitle5" class="col-head">Friday</span>
-                  <img
-                    src="images/Windy.jpg"
-                    id="weatherIcon5"
-                    class="weatherIcon"
-                  />
+                  <span id="dayTitle5" class="col-head"></span>
+                  <div id="image5"></div>
                   <div class="temp-data">
-                    <span id="data5">84</span>
+                    <span id="data5"></span>
                     <span>°F</span>
                   </div>
                 </div>
@@ -125,5 +103,6 @@
       </p>
       <p>Last updated: July 2025</p>
     </footer>
+    <script src="weather-header.js"></script>
   </body>
 </html>
