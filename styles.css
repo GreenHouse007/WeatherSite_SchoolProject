@@ -208,7 +208,7 @@ footer {
 .news-blips {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 1em;
 }
@@ -217,11 +217,22 @@ footer {
   margin: 1em;
 }
 
+.news-box a {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.news-box .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .news-box {
   padding: 15px;
   margin: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
   background-color: rgba(200, 200, 255, 0.3);
+  overflow: hidden;
 }
 
 .news-blips,
